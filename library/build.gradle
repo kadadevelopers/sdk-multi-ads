@@ -40,7 +40,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-appset:16.1.0'
     implementation 'com.google.android.gms:play-services-basement:18.5.0'
 
-    //Primary Ad Networks
+    //Ad Networks
     implementation 'com.google.android.gms:play-services-ads:23.6.0'
     implementation 'com.startapp:inapp-sdk:5.1.0'
     implementation 'com.applovin:applovin-sdk:13.1.0'
