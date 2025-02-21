@@ -18,6 +18,8 @@ dependencyResolutionManagement {
         maven { url 'https://maven.wortise.com/artifactory/public' }
         maven { url 'https://android-sdk.is.com/' }
         maven { url 'https://artifact.bytedance.com/repository/pangle' }
+        maven { url 'https://cboost.jfrog.io/artifactory/chartboost-ads/' }
+        maven { url 'https://maven.ogury.co' }
     }
 }
 </pre>
