@@ -1,14 +1,14 @@
 package com.kada.ads.sdkdemo.adapter;
 
-import static com.solodroid.ads.sdk.util.Constant.ADMOB;
-import static com.solodroid.ads.sdk.util.Constant.APPLOVIN;
-import static com.solodroid.ads.sdk.util.Constant.APPLOVIN_DISCOVERY;
-import static com.solodroid.ads.sdk.util.Constant.APPLOVIN_MAX;
-import static com.solodroid.ads.sdk.util.Constant.FACEBOOK;
-import static com.solodroid.ads.sdk.util.Constant.FAN;
-import static com.solodroid.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
-import static com.solodroid.ads.sdk.util.Constant.STARTAPP;
-import static com.solodroid.ads.sdk.util.Constant.WORTISE;
+import static com.kada.ads.sdk.util.Constant.ADMOB;
+import static com.kada.ads.sdk.util.Constant.APPLOVIN;
+import static com.kada.ads.sdk.util.Constant.APPLOVIN_DISCOVERY;
+import static com.kada.ads.sdk.util.Constant.APPLOVIN_MAX;
+import static com.kada.ads.sdk.util.Constant.FACEBOOK;
+import static com.kada.ads.sdk.util.Constant.FAN;
+import static com.kada.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
+import static com.kada.ads.sdk.util.Constant.STARTAPP;
+import static com.kada.ads.sdk.util.Constant.WORTISE;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -24,7 +24,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.solodroid.ads.sdk.format.NativeAdViewHolder;
+import com.kada.ads.sdk.format.NativeAdViewHolder;
 import com.kada.ads.sdkdemo.R;
 import com.kada.ads.sdkdemo.data.Constant;
 import com.kada.ads.sdkdemo.database.SharedPref;
@@ -81,19 +81,19 @@ public class AdapterPost extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             View v;
             switch (Constant.NATIVE_STYLE) {
                 case "news":
-                    v = LayoutInflater.from(parent.getContext()).inflate(com.solodroid.ads.sdk.R.layout.view_native_ad_news, parent, false);
+                    v = LayoutInflater.from(parent.getContext()).inflate(com.kada.ads.sdk.R.layout.view_native_ad_news, parent, false);
                     break;
                 case "radio":
-                    v = LayoutInflater.from(parent.getContext()).inflate(com.solodroid.ads.sdk.R.layout.view_native_ad_radio, parent, false);
+                    v = LayoutInflater.from(parent.getContext()).inflate(com.kada.ads.sdk.R.layout.view_native_ad_radio, parent, false);
                     break;
                 case "video_small":
-                    v = LayoutInflater.from(parent.getContext()).inflate(com.solodroid.ads.sdk.R.layout.view_native_ad_video_small, parent, false);
+                    v = LayoutInflater.from(parent.getContext()).inflate(com.kada.ads.sdk.R.layout.view_native_ad_video_small, parent, false);
                     break;
                 case "video_large":
-                    v = LayoutInflater.from(parent.getContext()).inflate(com.solodroid.ads.sdk.R.layout.view_native_ad_video_large, parent, false);
+                    v = LayoutInflater.from(parent.getContext()).inflate(com.kada.ads.sdk.R.layout.view_native_ad_video_large, parent, false);
                     break;
                 default:
-                    v = LayoutInflater.from(parent.getContext()).inflate(com.solodroid.ads.sdk.R.layout.view_native_ad_medium, parent, false);
+                    v = LayoutInflater.from(parent.getContext()).inflate(com.kada.ads.sdk.R.layout.view_native_ad_medium, parent, false);
                     break;
             }
             vh = new NativeAdViewHolder(v);

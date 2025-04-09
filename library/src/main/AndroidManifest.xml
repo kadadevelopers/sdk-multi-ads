@@ -55,7 +55,7 @@
 
         <meta-data
             android:name="com.wortise.ads.utm"
-            android:value="solodroid" />
+            android:value="kada" />
 
     </application>
 

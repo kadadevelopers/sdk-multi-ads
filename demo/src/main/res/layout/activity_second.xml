@@ -21,7 +21,7 @@
         android:layout_below="@+id/toolbar"
         android:scrollbars="none" />
 
-    <com.solodroid.ads.sdk.ui.BannerAdView
+    <com.kada.ads.sdk.ui.BannerAdView
         android:id="@+id/bannerAdView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

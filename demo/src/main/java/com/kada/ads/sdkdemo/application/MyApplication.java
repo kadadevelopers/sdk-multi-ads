@@ -1,11 +1,11 @@
 package com.kada.ads.sdkdemo.application;
 
-import static com.solodroid.ads.sdk.util.Constant.ADMOB;
-import static com.solodroid.ads.sdk.util.Constant.AD_STATUS_ON;
-import static com.solodroid.ads.sdk.util.Constant.APPLOVIN;
-import static com.solodroid.ads.sdk.util.Constant.APPLOVIN_MAX;
-import static com.solodroid.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
-import static com.solodroid.ads.sdk.util.Constant.WORTISE;
+import static com.kada.ads.sdk.util.Constant.ADMOB;
+import static com.kada.ads.sdk.util.Constant.AD_STATUS_ON;
+import static com.kada.ads.sdk.util.Constant.APPLOVIN;
+import static com.kada.ads.sdk.util.Constant.APPLOVIN_MAX;
+import static com.kada.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
+import static com.kada.ads.sdk.util.Constant.WORTISE;
 
 import android.app.Activity;
 import android.app.Application;
@@ -20,11 +20,11 @@ import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ProcessLifecycleOwner;
 import androidx.multidex.MultiDex;
 
-import com.solodroid.ads.sdk.format.AppOpenAdAppLovin;
-import com.solodroid.ads.sdk.format.AppOpenAdManager;
-import com.solodroid.ads.sdk.format.AppOpenAdMob;
-import com.solodroid.ads.sdk.format.AppOpenAdWortise;
-import com.solodroid.ads.sdk.util.OnShowAdCompleteListener;
+import com.kada.ads.sdk.format.AppOpenAdAppLovin;
+import com.kada.ads.sdk.format.AppOpenAdManager;
+import com.kada.ads.sdk.format.AppOpenAdMob;
+import com.kada.ads.sdk.format.AppOpenAdWortise;
+import com.kada.ads.sdk.util.OnShowAdCompleteListener;
 import com.kada.ads.sdkdemo.data.Constant;
 
 @SuppressWarnings("ConstantConditions")

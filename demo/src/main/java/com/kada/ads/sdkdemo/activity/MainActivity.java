@@ -1,26 +1,24 @@
 package com.kada.ads.sdkdemo.activity;
 
-import static com.solodroid.ads.sdk.util.Constant.ADMOB;
-import static com.solodroid.ads.sdk.util.Constant.APPLOVIN_DISCOVERY;
-import static com.solodroid.ads.sdk.util.Constant.APPLOVIN_MAX;
-import static com.solodroid.ads.sdk.util.Constant.FAN;
-import static com.solodroid.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
-import static com.solodroid.ads.sdk.util.Constant.IRONSOURCE;
-import static com.solodroid.ads.sdk.util.Constant.STARTAPP;
-import static com.solodroid.ads.sdk.util.Constant.UNITY;
-import static com.solodroid.ads.sdk.util.Constant.WORTISE;
+import static com.kada.ads.sdk.util.Constant.ADMOB;
+import static com.kada.ads.sdk.util.Constant.APPLOVIN_DISCOVERY;
+import static com.kada.ads.sdk.util.Constant.APPLOVIN_MAX;
+import static com.kada.ads.sdk.util.Constant.FAN;
+import static com.kada.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
+import static com.kada.ads.sdk.util.Constant.IRONSOURCE;
+import static com.kada.ads.sdk.util.Constant.STARTAPP;
+import static com.kada.ads.sdk.util.Constant.UNITY;
+import static com.kada.ads.sdk.util.Constant.WORTISE;
 import static com.kada.ads.sdkdemo.data.Constant.STYLE_DEFAULT;
 import static com.kada.ads.sdkdemo.data.Constant.STYLE_NEWS;
 import static com.kada.ads.sdkdemo.data.Constant.STYLE_RADIO;
 import static com.kada.ads.sdkdemo.data.Constant.STYLE_VIDEO_LARGE;
 import static com.kada.ads.sdkdemo.data.Constant.STYLE_VIDEO_SMALL;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,18 +37,18 @@ import androidx.lifecycle.ProcessLifecycleOwner;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.switchmaterial.SwitchMaterial;
-import com.solodroid.ads.sdk.format.AdNetwork;
-import com.solodroid.ads.sdk.format.AppOpenAd;
-import com.solodroid.ads.sdk.format.BannerAd;
-import com.solodroid.ads.sdk.format.InterstitialAd;
-import com.solodroid.ads.sdk.format.MediumRectangleAd;
-import com.solodroid.ads.sdk.format.NativeAd;
-import com.solodroid.ads.sdk.format.NativeAdView;
-import com.solodroid.ads.sdk.format.RewardedAd;
-import com.solodroid.ads.sdk.gdpr.GDPR;
-import com.solodroid.ads.sdk.util.OnRewardedAdCompleteListener;
-import com.solodroid.ads.sdk.util.OnRewardedAdDismissedListener;
-import com.solodroid.ads.sdk.util.OnRewardedAdErrorListener;
+import com.kada.ads.sdk.format.AdNetwork;
+import com.kada.ads.sdk.format.AppOpenAd;
+import com.kada.ads.sdk.format.BannerAd;
+import com.kada.ads.sdk.format.InterstitialAd;
+import com.kada.ads.sdk.format.MediumRectangleAd;
+import com.kada.ads.sdk.format.NativeAd;
+import com.kada.ads.sdk.format.NativeAdView;
+import com.kada.ads.sdk.format.RewardedAd;
+import com.kada.ads.sdk.gdpr.GDPR;
+import com.kada.ads.sdk.util.OnRewardedAdCompleteListener;
+import com.kada.ads.sdk.util.OnRewardedAdDismissedListener;
+import com.kada.ads.sdk.util.OnRewardedAdErrorListener;
 import com.kada.ads.sdkdemo.BuildConfig;
 import com.kada.ads.sdkdemo.R;
 import com.kada.ads.sdkdemo.data.Constant;
@@ -93,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         bannerAdView = findViewById(R.id.banner_ad_view);
-        bannerAdView.addView(View.inflate(this, com.solodroid.ads.sdk.R.layout.view_banner_ad, null));
+        bannerAdView.addView(View.inflate(this, com.kada.ads.sdk.R.layout.view_banner_ad, null));
 
         initAds();
         loadGdpr();
@@ -394,19 +392,19 @@ public class MainActivity extends AppCompatActivity {
     private void setNativeAdStyle(LinearLayout nativeAdView) {
         switch (Constant.NATIVE_STYLE) {
             case "news":
-                nativeAdView.addView(View.inflate(this, com.solodroid.ads.sdk.R.layout.view_native_ad_news, null));
+                nativeAdView.addView(View.inflate(this, com.kada.ads.sdk.R.layout.view_native_ad_news, null));
                 break;
             case "radio":
-                nativeAdView.addView(View.inflate(this, com.solodroid.ads.sdk.R.layout.view_native_ad_radio, null));
+                nativeAdView.addView(View.inflate(this, com.kada.ads.sdk.R.layout.view_native_ad_radio, null));
                 break;
             case "video_small":
-                nativeAdView.addView(View.inflate(this, com.solodroid.ads.sdk.R.layout.view_native_ad_video_small, null));
+                nativeAdView.addView(View.inflate(this, com.kada.ads.sdk.R.layout.view_native_ad_video_small, null));
                 break;
             case "video_large":
-                nativeAdView.addView(View.inflate(this, com.solodroid.ads.sdk.R.layout.view_native_ad_video_large, null));
+                nativeAdView.addView(View.inflate(this, com.kada.ads.sdk.R.layout.view_native_ad_video_large, null));
                 break;
             default:
-                nativeAdView.addView(View.inflate(this, com.solodroid.ads.sdk.R.layout.view_native_ad_medium, null));
+                nativeAdView.addView(View.inflate(this, com.kada.ads.sdk.R.layout.view_native_ad_medium, null));
                 break;
         }
     }

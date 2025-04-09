@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.solodroid.ads.sdk.format.BannerAd;
+import com.kada.ads.sdk.format.BannerAd;
 import com.kada.ads.sdkdemo.R;
 import com.kada.ads.sdkdemo.adapter.AdapterPost;
 import com.kada.ads.sdkdemo.data.Constant;

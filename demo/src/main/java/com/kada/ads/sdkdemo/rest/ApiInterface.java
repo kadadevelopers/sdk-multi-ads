@@ -11,7 +11,7 @@ import retrofit2.http.Url;
 public interface ApiInterface {
 
     String CACHE = "Cache-Control: max-age=0";
-    String AGENT = "Data-Agent: Solodroid";
+    String AGENT = "Data-Agent: Kada";
 
     @Headers({CACHE, AGENT})
     @GET
