@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.kada.ads.sdkdemo.application.MyApplication"
+        android:name="com.kadadevelopers.ads.sdkdemo.application.MyApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,10 +35,10 @@
         </activity>
 
         <activity
-            android:name="com.kada.ads.sdkdemo.activity.MainActivity"
+            android:name="com.kadadevelopers.ads.sdkdemo.activity.MainActivity"
             android:exported="true" />
 
-        <activity android:name="com.kada.ads.sdkdemo.activity.SecondActivity" />
+        <activity android:name="com.kadadevelopers.ads.sdkdemo.activity.SecondActivity" />
 
     </application>
 

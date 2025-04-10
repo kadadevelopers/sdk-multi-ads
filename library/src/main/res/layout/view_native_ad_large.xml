@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.kada.ads.sdk.util.TemplateView
+        <com.kadadevelopers.ads.sdk.util.TemplateView
             android:id="@+id/admob_native_ad_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
             android:visibility="gone"
             app:gnt_template_type="@layout/gnt_admob_large_template_view" />
 
-        <com.kada.ads.sdk.util.AdManagerTemplateView
+        <com.kadadevelopers.ads.sdk.util.AdManagerTemplateView
             android:id="@+id/google_ad_manager_native_ad_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
